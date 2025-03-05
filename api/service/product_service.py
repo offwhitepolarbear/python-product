@@ -6,10 +6,10 @@ class ProductService:
     def __init__(self):
         pass
 
-    def get_product_dto(self, product_id, coupon_id):
+    def get_product_by_product_id(self, product_id):
         try:
             product = Product.objects.get(id=product_id)
-            category_name = product.category.name if product.category else None
+            category_name = product.category.name if product.category else ""
             return ProductDTO(
                 id=product.id,
                 name=product.name,

@@ -1,0 +1,64 @@
+[
+    {
+        "model": "api.category",
+        "pk": 1,
+        "fields": {
+            "name": "전자제품"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 2,
+        "fields": {
+            "name": "생활용품"
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 1,
+        "fields": {
+            "name": "노트북",
+            "description": "고성능 노트북으로 다양한 작업이 가능합니다.",
+            "price": 1500000,
+            "category": 1,
+            "discount_rate": 0.10,
+            "coupon_applicable": true
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 2,
+        "fields": {
+            "name": "무선 이어폰",
+            "description": "소음 제거 기능이 포함된 고품질 무선 이어폰.",
+            "price": 200000,
+            "category": 1,
+            "discount_rate": 0.05,
+            "coupon_applicable": true
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 3,
+        "fields": {
+            "name": "스마트 워치",
+            "description": "운동 추적 및 건강 모니터링 기능을 제공하는 스마트 워치.",
+            "price": 300000,
+            "category": 1,
+            "discount_rate": 0.15,
+            "coupon_applicable": true
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 4,
+        "fields": {
+            "name": "청소기",
+            "description": "강력한 흡입력을 자랑하는 최신형 무선 청소기.",
+            "price": 500000,
+            "category": 2,
+            "discount_rate": 0.20,
+            "coupon_applicable": false
+        }
+    }
+]
