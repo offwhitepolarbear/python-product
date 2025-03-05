@@ -60,5 +60,21 @@
             "discount_rate": 0.20,
             "coupon_applicable": false
         }
+    },
+    {
+        "model": "api.coupon",
+        "pk": 1,
+        "fields": {
+            "code": "WELCOME10",
+            "discount_rate": 0.10
+        }
+    },
+    {
+        "model": "api.coupon",
+        "pk": 2,
+        "fields": {
+            "code": "SPRING15",
+            "discount_rate": 0.15
+        }
     }
 ]

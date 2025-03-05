@@ -21,7 +21,7 @@ from api.view.product_view import ProductView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('products/', ProductView.as_view({'get': 'get_product_list'}), name='product-list'),  # URL 매핑
-    path('products/<int:id>/', ProductView.as_view({'get': 'get_product_detail'}), name='product-detail'),
+    path('product/', ProductView.as_view({'get': 'get_product_detail'}), name='product-detail'),
     # path('api/', include('api.urls')),  # API URL 추가
 ]
 
