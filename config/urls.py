@@ -16,12 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from api.view.coupon_view import CouponView
 from api.view.product_view import ProductView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('products/', ProductView.as_view({'get': 'get_product_list'}), name='product-list'),  # URL 매핑
     path('product/', ProductView.as_view({'get': 'get_product_detail'}), name='product-detail'),
+    path('coupons/', CouponView.as_view({'get': 'get_all_coupon'}), name='coupon-list'),
+
     # path('api/', include('api.urls')),  # API URL 추가
 ]
 
